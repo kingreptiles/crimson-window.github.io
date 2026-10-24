@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Privacy Policy</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Privacy notes · Crimson Window</title>
+  <meta name="description" content="Privacy information for this development website and a short explanation of current Crimson Window development-build data flows.">
+  <meta property="og:title" content="Privacy notes · Crimson Window">
+  <meta property="og:description" content="Privacy information for this development website and a short explanation of current Crimson Window development-build data flows.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#111013">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="site.css">
 </head>
 <body>
-
-<h1>Privacy Policy</h1>
-
-<p>
-We collect account information and conversation data necessary to provide our services.
-</p>
-
-<p>
-We do not sell personal information.
-</p>
-
-<p>
-Users must be at least 18 years old.
-</p>
-
-<p><a href="index.html">Home</a></p>
-
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="Crimson Window home"><span class="window-mark" aria-hidden="true"></span>Crimson Window</a>
+    <nav aria-label="Main navigation"><a href="index.html">Overview</a><a href="guide.html">App guide</a><a href="community.html">Community</a><a href="support.html">Support</a></nav>
+    <span class="status"><span aria-hidden="true"></span>In development</span>
+  </header>
+  <main id="main"><header class="page-intro wrap"><p class="eyebrow">Information / Privacy</p><h1>Know what<br><em>you’re sharing.</em></h1><p class="lede">A short explanation of this website and the current development builds. A full service privacy notice will accompany a public release.</p></header><div class="article-grid wrap"><aside class="toc"><p class="eyebrow">On this page</p><nav aria-label="On this page"><a href="#website">This website</a><a href="#contact">If you contact us</a><a href="#development">How development builds handle data</a><a href="#providers">Providers and API keys</a><a href="#release">Before a public release</a></nav></aside><article class="prose"><div class="notice">Website notes updated 24 October 2026. Crimson Window is in development. No public app account can be created through this site.</div><section id="website"><h2>This website</h2><p>This is a static information website hosted on GitHub Pages. It has no account registration, chat service, payment form, advertising, or site-added analytics. It does not add tracking cookies or load third-party fonts.</p><p>GitHub may process technical visit information as the hosting provider. See <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Clicking an email link opens your email application; any message you send is handled by the relevant email services.</p></section><section id="contact"><h2>If you contact us</h2><p>If you email Crimson Window, the message includes your address and whatever information you choose to provide. Send only what is needed to answer your question. Please do not send API keys, passwords, full payment details, illegal images, or an entire private conversation.</p><p>Privacy questions can be sent to <a href="mailto:uta.cornelc@gmail.com?subject=Crimson%20Window%20privacy">uta.cornelc@gmail.com</a>.</p></section><section id="development"><h2>How development builds handle data</h2><p>The app is not publicly downloadable. For people using a development build, the current implementation distinguishes:</p><ul><li><strong>Device data:</strong> local conversations, profiles, custom instructions, and provider settings are stored on the device, with account-separated local databases.</li><li><strong>Account data:</strong> the backend holds account and creator-profile information, age-access information, and service usage records.</li><li><strong>AI requests:</strong> relevant messages, profile context, character/persona information, instructions, summaries, and pinned content pass through the backend to the selected AI provider. Local chat storage does not mean chats stay on-device during generation.</li><li><strong>Optional cloud features:</strong> eligible accounts can sync conversation content and related snapshots. Private cloud storage and public publication are different features.</li><li><strong>Public content:</strong> published characters, personas, shared memories, comments, and reactions are available to users with the relevant access. Sharing a memory publishes the selected copy.</li><li><strong>Support and moderation:</strong> reports may include contact information, explanations, links, and preserved character content for review.</li></ul></section><section id="providers"><h2>Providers and API keys</h2><p>The backend supports AI services including Groq, OpenAI, and OpenRouter, depending on configuration. A selected package may try another configured model/provider after a failure. Relevant conversation context can therefore be processed by more than one provider during retries.</p><p>A user-owned OpenAI key is stored using platform-provided protected storage and sent to the backend when needed for model listing or generation. It is not part of ordinary conversation cloud synchronization. Provider privacy practices, retention, and charges are separate from this website.</p><p>Learn more from <a href="https://groq.com/privacy-policy">Groq</a>, <a href="https://developers.openai.com/api/docs/guides/your-data">OpenAI’s API data controls</a>, and <a href="https://openrouter.ai/privacy">OpenRouter</a>. Do not treat a fictional chat as a confidential channel for sensitive real-world information.</p></section><section id="release"><h2>Before a public release</h2><p>These are development notes, not a complete privacy notice for a released service. Operator details, service-specific retention information, provider arrangements, and the process for exercising applicable privacy rights will need to be published with the public service.</p></section></article></div></main>
+  <footer class="site-footer wrap">
+    <div><a class="brand" href="index.html"><span class="window-mark" aria-hidden="true"></span>Crimson Window</a><p>Interactive fiction. A little more yours.</p><p class="fine">In development. No public download is available yet.</p></div>
+    <nav aria-label="Footer navigation"><a href="guide.html">App guide</a><a href="community.html">Community &amp; safety</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="support.html">Support</a></nav>
+    <div class="footer-contact"><a href="mailto:uta.cornelc@gmail.com">uta.cornelc@gmail.com</a><p class="fine">Accounts 16+ · Mature content 18+<br>Website updated 24 October 2026</p></div>
+  </footer>
 </body>
 </html>
